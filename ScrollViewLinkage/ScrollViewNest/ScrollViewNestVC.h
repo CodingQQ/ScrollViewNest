@@ -25,8 +25,7 @@
  headerViewHeight：顶部视图高度
  */
 - (instancetype)initWithViewFrame:(CGRect)viewFrame headerView:(UIView *)headerView headerViewHeight:(CGFloat)headerViewHeight titles:(NSArray *)titles;
-///** 子VC title */
-//@property (nonatomic,assign)NSArray *titles;
+
 
 @property (nonatomic,weak) id<ScrollViewNestVCDelegate> delegate;
 

@@ -25,7 +25,7 @@ static CGFloat titleViewH = 40;
 @interface ScrollViewNestVC ()<UIScrollViewDelegate>
 @property (nonatomic,strong)UIScrollView *mainScrollView;
 /** 子VC title */
-@property (nonatomic,assign)NSArray *titles;
+@property (nonatomic,copy)NSArray *titles;
 @property (nonatomic,strong)UIView *titlesView;
 @property (nonatomic,strong)UIScrollView *subScrollView;
 
@@ -54,8 +54,6 @@ static CGFloat titleViewH = 40;
         //
         CGFloat contentH = titleViewY +titleViewH +tableH +64;
         self.mainScrollView.contentSize = CGSizeMake(tableW, contentH);
-        
-        
         
         self.titles = titles;
     }
